@@ -1,0 +1,46 @@
+{
+    "version": "2.1.0",
+    "runs": [
+        {
+            "tool": {
+                "driver": {
+                    "name": "Simple SQLi Scanner",
+                    "informationUri": "https://example.com/simple-sqli-scanner",
+                    "rules": [
+                        {
+                            "id": "sql-injection-vulnerability",
+                            "shortDescription": {
+                                "text": "SQL Injection Vulnerability"
+                            },
+                            "fullDescription": {
+                                "text": "Code patterns that might indicate SQL Injection vulnerabilities."
+                            },
+                            "helpUri": "https://owasp.org/www-community/attacks/SQL_Injection"
+                        }
+                    ]
+                }
+            },
+            "results": [
+                {
+                    "ruleId": "sql-injection-vulnerability",
+                    "message": {
+                        "text": "Potential SQL Injection vulnerability detected."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "StudentRepoImpl.java"
+                                },
+                                "region": {
+                                    "startLine": 21
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
